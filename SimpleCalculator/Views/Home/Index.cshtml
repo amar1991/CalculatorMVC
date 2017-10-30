@@ -1,0 +1,71 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link rel="stylesheet" type="text/css" href="~/Content/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/Main.css" />
+    <script src="~/Scripts/jquery-3.1.1.min.js"></script>
+
+    <script type="text/javascript">
+
+    $(document).ready(function () {
+        $("#Outcome").css("color", "White");
+    });
+
+    
+
+    </script>
+
+    
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        <form method="post">
+            <div class="CalculatorMain">
+
+                <span>Enter your first number ?</span>
+                @Html.TextBox("number1")
+                <br /><br />
+                <span>Enter your second number ?</span>
+                @Html.TextBox("number2")
+                <br /><br />
+                <div class="selector">
+                    <select class="form-control" name="Operator">
+                        <option>Select Operator</option>
+                        <option>Add</option>
+                        <option>Subtract</option>
+                        <option>Divide</option>
+                        <option>Multiply</option>
+                    </select>
+                </div>
+                <br />
+
+                <div class="CalculatorButton">
+                    <span><button class="btn-success">Enter</button></span>
+                </div>
+                <br />
+                
+                
+                    <label id="Outcome">@ViewBag.Outcome</label>
+                    
+                <br><br />
+                
+                <div id="helpblock">
+
+                </div>    
+
+                <br><br />
+
+
+            </div>
+            <br>
+        </form>
+    }
+
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>

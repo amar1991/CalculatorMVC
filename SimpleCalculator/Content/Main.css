@@ -1,0 +1,40 @@
+﻿body { 
+    padding-top:200px;
+    padding-left:300px;
+    background-color:pink;
+}
+
+.CalculatorMain {
+    position: relative;
+    margin: 0 auto;
+    width:300px;
+    
+    
+}
+
+.selector{
+    width:200px;
+
+}
+
+
+
+#Outcome {
+    border: 2px solid grey;
+    border-radius: 5px;
+    background-color:grey;
+    width:180px;
+    height:40px;
+    text-align:center;
+    
+}
+
+span {
+    font-size:16px;
+    
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+
